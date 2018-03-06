@@ -1,9 +1,13 @@
 # Responsive-Portfolio
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-**ISSUES**
-  *@640px header does not extend to the left
-  *@980px, 768px, 640px there is white space to the right of the main content div. Its noticeable on the portfolio page the most.
+ISSUES 
+  @640px header does not extend to the left
+  
+  @980px, 768px, 640px there is white space to the right of the main content div. Its noticeable on the portfolio page the most.
+  
+  @768px, and 640px the text in About Me div stops wrapping around the image.
+  
 ----------------------------------------------------------------------------------------------------------------------------------------  
 
 Assignment Two Instructions - (No Bootstrap)
