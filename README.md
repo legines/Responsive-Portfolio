@@ -1,9 +1,10 @@
 # Responsive-Portfolio
 
+----------------------------------------------------------------------------------------------------------------------------------------
 **ISSUES**
   *@640px header does not extend to the left
   *@980px, 768px, 640px there is white space to the right of the main content div. Its noticeable on the portfolio page the most.
-  
+----------------------------------------------------------------------------------------------------------------------------------------  
 
 Assignment Two Instructions - (No Bootstrap)
 Copy the contents of Basic-Portfolio (your first homework solution) and paste the mentioned files into Responsive-Portfolio.
