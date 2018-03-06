@@ -33,6 +33,7 @@ header h1{
 }
 
 nav{
+  width: 270px;
   float: right;
   margin-top: 35px;
   text-align: center;
@@ -59,8 +60,6 @@ nav ul li:last-child a{
 .content{
   width: 960px;
   margin: 0 auto;
-  clear: both;
-  overflow: hidden;
 }
 
 p{
@@ -98,11 +97,14 @@ form button{
 
 .portItem{
   position: relative;
-  margin: 10px 10px;
-  width: 274px;
+  margin-bottom: 20px;
+  width: 45%;
   float: left;
   height: 250px;
-  overflow: auto;
+}
+
+.portItem:nth-of-type(even){
+  float: right;
 }
 
 .portItem h3{
@@ -113,10 +115,6 @@ form button{
   padding: 20px 0;
   width: 100%;
   bottom: 15px;
-}
-
-.clearfix{
-  min-height: calc(100vh - 264px);
 }
 
 .clearfix::after {
@@ -216,134 +214,103 @@ footer{
   height: 20px;
 }
 
-
-
 /* MEDIA QUERIES */
-@media (max-width: 980px) {
-  .content {
-		width: 980px;
+@media screen and (max-width: 640px) {
+  /* Ful width name header. */
+	.name	{
+		float: left;
+		background-color: #4aaaa5;
+		border-bottom: none;
+		color: #ffffff;
+		height: 100%;
+		width: 100%;
+		margin-bottom: 0;
+		font-family: 'Georgia', Times, Times New Roman, serif;
+		text-align: center;
+		font-weight: bold;
+		vertical-align: middle;
+		padding-top: 3%;
+		margin-left: 0%;
 	}
 
-	.name{
-		margin-left: 80px;
+	/* Nav drops below header. */
+	nav	{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		float: left;
+		border-bottom: 2px solid #cccccc;
 	}
-
-	nav ul {
-		padding-right: 80px;
-	}
-
-	.inline {
-		margin-left: 100px;
-}
 
 	p {
-		margin-top: 20px;
-		display: inline-block;
+		margin-top: 15px;
 	}
 
-  #left {
-		width: 470px;
-		margin-left: 80px;
-		margin-bottom: 30px;
+	.content {
+		border-bottom: none;
+		/* Position header static. */
+		z-index: -1;
+	}
+
+	.portItem {
+		width: 100%;
 	}
 
 	#right {
-		margin-right: 80px;
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 979px){
-  .content {
-		width: 768px;
-	}
-
-	#name {
-		margin-left: 20px;
-	}
-
-	nav ul {
-		padding-right: 20px;
+		clear: both;
+		float: left;
+		overflow: auto 0;
+		width: 96%;
+		margin: 2%;
+		margin-right: 2%
 	}
 
 	#left {
-		width: 730px;
-		margin-left: 20px;
-		margin-bottom: 30px;
-	}
-
-	#right {
-		width: 730px;
-		margin-right: 20px;
-	}
-
-	#right img {
+		clear: both;
 		float: left;
-		padding-right: 10px;
+		overflow: auto 0;
+		width: initial;
+		margin: 2%;
 	}
 
-	nav ul li {
-		font-size: 16px;
-	}  
+	/* Image full width with space before paragraph. */
+	.inline {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 15px;
+	}
+  
+}
+
+@media screen and (max-width: 768px){
+  .ico{
+    width: inherit;
+  }
+
+  .portitem{
+    width: 50%;
+  }
+
+  #right{
+    clear: both;
+		float: left;
+		overflow: auto 0;
+		width: 96%;
+		margin: 2%;
+		margin-right: 2% 
+  }
+
+  #left{
+    clear: both;
+		float: left;
+		overflow: auto 0;
+		width: 96%;
+		margin: 2%;
+  }
+
 }	
 
-@media screen and (max-width: 640px) {
-  .content {
-		width: 640px;
-	}
+@media screen and (max-width: 980px) {
 
-	header {
-		border-bottom: none;
-	}
 
-	.name {
-		text-align: center;
-		width: 640px;
-	}
-	
-	nav {
-		background-color: #fff;
-		width: 640px;
-		border-bottom: 2px solid #ddd;
-	}
-
-	nav ul li {
-		line-height: 60px;
-	}
-
-	nav ul li a {
-		margin-left: 40px;
-		padding-left: 70px;
-	}
-
-	.inline {
-		margin-left: 150px;
-	}
-
-	p {
-		word-wrap: break-word;
-		margin-top: 20px;
-		display: inline-block;
-	}
-	
-	#right {
-		width: 560px;
-		height: 190px;
-		margin-right: 40px;	
-	}
-
-	#right img {
-		float: left;
-		padding-right: 10px;
-	}
-
-	#left {
-		width: 560px;
-		margin-left: 40px;
-		margin-bottom: 30px;
-	}
-	
-	.portItem {
-		float: center;
-	}
 }
-
