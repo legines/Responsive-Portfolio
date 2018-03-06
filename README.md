@@ -1,7 +1,7 @@
 # Responsive-Portfolio
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-ISSUES 
+ISSUES
   @640px header does not extend to the left
   
   @980px, 768px, 640px there is white space to the right of the main content div. Its noticeable on the portfolio page the most.
